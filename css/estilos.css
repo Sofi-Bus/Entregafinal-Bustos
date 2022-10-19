@@ -7,8 +7,7 @@
     outline: none;
 }
 
-/*----- Todo el index---*/
-
+/*----- Todo ---*/
 
 body {
     background: whitesmoke;
@@ -26,13 +25,14 @@ ul {
 
 a,
 a:active {
-    text-decoration: none;
-    color: black;
+    text-decoration: none !important;
+    color: black !important;
 
 }
 
-/*----Fin de todo el index-----*/
+/*----Fin de todo -----*/
 
+/*----primera Pagina---*/
 
 .imagen-principal {
 
@@ -47,6 +47,7 @@ a:active {
     flex-direction: column;
 }
 
+/*----Footer---*/
 .footer {
     display: flex;
     margin-top: auto;
@@ -56,21 +57,9 @@ a:active {
     margin-bottom: 20px;
 
 
-
-
 }
 
-.footer1 {
-    display: grid;  
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: auto;
-    
 
-    
-
-
-}
 .redes {
     display: flex;
     max-width: 100%;
@@ -80,7 +69,8 @@ a:active {
 
 }
 
-.redes a, i {
+.redes a,
+i {
     display: inline-block;
     font-size: 20px;
     margin: 0 10px 0 10px;
@@ -88,20 +78,21 @@ a:active {
 
 }
 
-
-
-
-.redes a, i:hover {
+.redes a,
+i:hover {
     transform: scale(1.5);
-    color:  rgba(243, 174, 26, 0.705);
+    color: rgba(243, 174, 26, 0.705);
     transition: all 1s ease;
 
 }
 
-
-
+/*---fin de footer--*/
 
 /*------- inicio de Header -----*/
+.titulo {
+    margin: 50px 50px 30px 50px;
+
+}
 
 .menu {
 
@@ -109,9 +100,6 @@ a:active {
     align-items: top;
     justify-content: flex-end;
     color: black;
-    
-
-
 
 }
 
@@ -123,7 +111,7 @@ a:active {
 
 .menu li a:hover {
 
-    background-color:   rgba(243, 174, 26, 0.705);
+    background-color: rgba(243, 174, 26, 0.705);
     padding: 3px;
     transition: all .3s;
 
@@ -147,11 +135,16 @@ a:active {
 
 }
 
-
-
 /*------- Fin de Header -----*/
 
 /*-----pagina Viajes-----*/
+
+.lugares {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
 
 .grid-container {
 
@@ -178,7 +171,7 @@ a:active {
 
 }
 
-    
+
 
 .texto-galeria {
 
@@ -193,26 +186,37 @@ a:active {
     height: 100%;
     text-align: center;
     background-color: rgb(53, 52, 52, 0.9);
-   
 
 
 
 }
 
 .texto-galeria>p,
-h2 {
-    margin-top: 50px;
-
-
+h2,
+h3 {
+    margin-top: 20px;
 
 
 }
 
 .grid-item:hover .texto-galeria {
     display: none;
-       
+
 
 }
+
+
+
+
+.fa-sharp {
+    color: whitesmoke;
+    font-size: xx-large;
+
+}
+
+
+
+
 
 
 @media screen and (max-width:767px) {
@@ -220,6 +224,82 @@ h2 {
     .grid-container {
         grid-template-columns: 1fr;
     }
+
+    .menu {
+
+        display: flex;
+        flex-direction: column;
+        align-items: top;
+        justify-self: flex-start;
+        color: black;
+
+    }
+
+    .menu li {
+        margin: 1px;
+
+
+    }
+
+    .menu li a:hover {
+
+        background-color: rgba(243, 174, 26, 0.705);
+        padding: 1px;
+        transition: all .3s;
+    }
+
+    .titulo {
+        margin: 5px 5px 5px 5px;
+        font-size: x-small;
+
+
+    }
+
+
+
+    .menu-dropdown {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        visibility: collapse;
+        z-index: 1000;
+        margin-left: 70px;
+    }
+
+    .footer {
+        display: flex;
+       text-align:right;
+       align-self: flex-start;
+        font-size: xx-small;
+
+
+    }
+
+
+    .redes {
+        display: flex;
+        max-width: 100%;
+        max-height: 100%;
+        justify-content: end;
+
+
+    }
+
+    .redes {
+
+        justify-content: end;
+
+
+    }
+
+    .redes a,
+    i {
+        display: inline-block;
+        font-size: 5px;
+        color: black;
+
+    }
+
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
@@ -229,10 +309,7 @@ h2 {
     }
 }
 
-.titulo {
-    margin: 50px 50px 30px 50px;
 
-}
 
 /*-----pagina nosotros---*/
 
@@ -245,27 +322,50 @@ h2 {
 
 }
 
+.grid-container-nosotros {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+
+
+
+
+}
+
 .nosotros-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 500px;
+    grid-template-rows: 1fr, 1fr;
+    grid-auto-rows: 240px;
     padding: 20px;
-    grid-gap: 30px;
+    grid-gap: 40px;
 
 }
 
 .nosotros-imagen {
     width: 100%;
     height: 100%;
-    object-fit: cover
+    object-fit: cover;
+    transition: all 100ms;
+    position: relative;
+
+}
+
+.nosotros-imagen:hover {
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+
+
 }
 
 /*pagina de Viajes----*/
 
 .pagina-lugares {
     display: grid;
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 95%;
+    max-height: 90%;
 
 }
 
@@ -279,9 +379,8 @@ h2 {
 }
 
 .imagen-lugares {
-
     width: 100%;
-    height: 100%;
+    height: 513.98px;
     object-fit: cover;
 
 
@@ -294,6 +393,7 @@ h2 {
     font-size: x-large;
 
 
+
 }
 
 
@@ -303,56 +403,73 @@ h2 {
     align-self: start;
 
 
+
 }
 
-.fa-sharp  {
-    color: whitesmoke;
-    font-size: xx-large;
-   
-}
+
+
 /*----pagina de contacto---*/
 
- 
-.titulo-contacto {
+#titulo {
     font-family: monospace;
-    margin: 50px 50px 30px 50px;
-    padding: 20px;
-   
-}
-
-.titulo-contacto> h3 { font-size: xx-large;
+    margin: 30px 30px 0px 30px;
+    font-weight: bold;
+    font-size: x-large;
+    line-height: 0;
 
 
-}
-
-
-
-.ibody{
-    background-color:  #ecf0f3;
-    margin: 30px auto;
-    width: 500px;  
-    font-family: monospace; 
 
 }
- label {
-    margin-top: 6px;
-
-
- }
-
-.jumbotron{
-    padding: 16px;
-}
-
-.jumbotron h4 { 
-    font-size: 36px;
-    text-align: center;
+.contacto{
     
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+}
+.titulo-formulario {
+    text-align: center;
 }
 
-.fcontacto{
+
+.ibody {
+    
+    background-image: url(../images/los_gigantes/gigantes_noche_estrellas.jpeg);
+    background-size: cover;
+    margin: 30px auto;
+    width: 500px;
+    font-family: monospace;
+    border: 1px solid #bfd8eb;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    color: whitesmoke;
+
+
+}
+
+label,
+input[type="submit"] {
+    margin-top: 8px;
+
+
+}
+
+.jumbotron {
+
+    border-radius: 8px 8px 0px 0px;
+    -webkit-border-radius: 8px 8px 0px 0px;
+    -moz-border-radius: 8px 8px 0px 0px;
+
+}
+
+.jumbotron h1 {
+    font-size: 26px;
+    text-align: center;
+
+
+}
+
+.fcontacto {
     padding: 14px;
-
-
 
 }

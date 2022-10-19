@@ -7,20 +7,21 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Contacto</title>
     <script src="https://kit.fontawesome.com/6fdfc2e52f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="shortcut icon" href="../images/header/Logo.jpeg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
 </head>
 
-<body>
+<body class="contacto">
     <header class="titulo-contacto">
-        <h3>Cordobeses x Córdoba</h3>
-        <h3> - Blog de Viaje -</h3>
+        <h1 id="titulo">Cordobeses x Córdoba</h1>
+        <h3 id="titulo"> - Blog de Viaje -</h3>
         <nav>
             <ul class="menu">
                 <li><a href="../index.html">Hola</a></li>
-                <li><a href="#">Nosotros </a></li>
+                <li><a href="../pages/nosotros.html">Nosotros </a></li>
                 <li><a href="./viajes/viajes.html">Viajes</a>
                     <ul class="menu-dropdown">
                         <li><a href="./pages/viajes/lugares/bocas-del-rio.html">Bocas del Rio</a></li>
@@ -35,45 +36,39 @@
 
                     </ul>
                 </li>
-                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="#">Contacto</a></li>
 
             </ul>
         </nav>
         <div class="linea"></div>
     </header>
-    <main>
-
-        <div class="ibody">
-            <div class="jumbotron">
-                <h4>Contacta con Nosotros</h4>
-            </div>
-            <div class="fcontacto">
-                <form method="post" name="fcontacto" id="fcontacto" action="./">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label>Tu Nombre:</label>
-                            <input type="text" name="name" id="name" class="form-control">
-                        </div>
-                        <div class="col-md-6">
-                            <label>Tu Email:</label>
-                            <input type="text" name="email" id="email" class="form-control">
-                        </div>
+    <div class="ibody">
+        <div class="titulo-formulario">
+            <h1>Contacta con Nosotros</h1>
+        </div>
+        <div class="fcontacto" >
+            <form method="post" name="fcontacto" id="fcontacto" action="./">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Tu Nombre:</label>
+                        <input type="text" name="name" id="name" class="form-control">
                     </div>
-                        <label>Asunto:</label>
-                    
-                    <input type="text" name="asunto" id="asunto" class="form-control">
-                    <label>Tu Mensaje</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control">   </textarea>
+                    <div class="col-md-6">
+                        <label>Tu Email:</label>
+                        <input type="text" name="email" id="email" class="form-control">
+                    </div>
+                </div>
+                <label>Asunto:</label>
 
-                </form>
-            </div>
-
-
-
-
+                <input type="text" name="asunto" id="asunto" class="form-control">
+                <label>Tu Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form-control">   </textarea>
+                <input type="submit" class="btn btn bg-light" value="Enviar">
+            </form>
         </div>
 
-    </main>
+    </div>
+
 
     <footer class="footer">
         <p> Hecho con <i class="fas fa-heart cora"></i> por Sofi Bustos</p>
@@ -85,7 +80,15 @@
         </div>
 
     </footer>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
