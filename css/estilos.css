@@ -1,8 +1,6 @@
 * {
     margin: 0px;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
     border: none;
     outline: none;
 }
@@ -13,8 +11,7 @@ body {
     background: whitesmoke;
     font-family: monospace;
     min-height: 100vh;
-
-
+    
 }
 
 ol,
@@ -33,12 +30,23 @@ a:active {
 /*----Fin de todo -----*/
 
 /*----primera Pagina---*/
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
 .imagen-principal {
-
+    
+    
     margin-top: 30px;
     max-width: 100%;
-    max-height: 100%
+    max-height: 100%;
+   
+
+}
+.imagen-principal-mobile {
+    display: none;
 }
 
 .pagina-principal {
@@ -46,6 +54,43 @@ a:active {
     min-height: 100vh;
     flex-direction: column;
 }
+
+/*---- responsive pag. index---*/
+@media screen and (max-width:767px) {
+
+    .imagen-principal {
+        
+        width: 100vh;
+        height: 300px;
+        object-fit: cover;
+      
+    }
+    .imagen-principal{
+        display: none;
+    }
+
+    .imagen-principal-mobile{
+        display: flex;
+        width: 100vh;
+        height: 300px;
+        object-fit: cover;
+        margin-top: 50px;
+
+    }
+    
+    .footer {
+        display: flex;
+        text-align: right;
+        align-self: flex-start;
+        font-size: xx-small;
+
+
+    }
+
+
+
+}
+
 
 /*----Footer---*/
 .footer {
@@ -268,8 +313,8 @@ h3 {
 
     .footer {
         display: flex;
-       text-align:right;
-       align-self: flex-start;
+        text-align: right;
+        align-self: flex-start;
         font-size: xx-small;
 
 
@@ -420,19 +465,21 @@ h3 {
 
 
 }
-.contacto{
-    
+
+.contacto {
+
     display: flex;
     max-width: 100%;
     flex-direction: column;
 }
+
 .titulo-formulario {
     text-align: center;
 }
 
 
 .ibody {
-    
+
     background-image: url(../images/los_gigantes/gigantes_noche_estrellas.jpeg);
     background-size: cover;
     margin: 30px auto;
