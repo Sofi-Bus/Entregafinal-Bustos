@@ -1,0 +1,50 @@
+
+
+#titulo {
+    font-family: monospace;
+    margin: 20px 0px 0px 50px;
+    font-weight: bold;
+    font-size: xx-large;
+    line-height: 0;
+
+}
+.contacto {
+    margin-top: 3%;
+    margin-right: 20px;
+    max-width: 100%;
+    min-height: 100%;
+    display: flex;    
+    flex-direction: column;
+    font-size: medium;
+   
+}
+
+.titulo-formulario h1  {    
+        text-align: center;
+        font-size: xx-large;
+}
+
+.ibody {
+
+    background-image: url(../images/los_gigantes/gigantes_noche_estrellas.jpeg);
+    background-size: cover;
+    margin: 40px auto;
+    margin-bottom: 60px;
+    width: 500px;
+    font-family: monospace;
+    border: 1px solid #bfd8eb;
+    border-radius: 8px;
+    color: whitesmoke;
+
+}
+
+label,
+input[type="submit"] {
+    margin-top: 8px;
+
+}
+
+.fcontacto {
+    padding: 14px;
+
+}

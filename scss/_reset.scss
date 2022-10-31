@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ol,
+ul {
+    list-style: none;
+
+}
+
+a,
+a:active {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+body {
+    background: whitesmoke;
+    font-family: monospace;
+    min-height: 100vh;
+
+}
+
+* ::selection {
+    background-color: $Amarillo;
+    color: black;
+
+}
