@@ -71,10 +71,14 @@ body {
   text-align: center;
   background-color: rgba(58, 57, 57, 0.9); }
 
-.texto-galeria > p,
-h2,
-h3 {
-  margin-top: 20px; }
+.texto-galeria p,
+.texto-galeria h2,
+.texto-galeria h3 {
+  font-size: 20px;
+  font-family: monospace; }
+
+.texto-galeria i {
+  margin-top: 30px; }
 
 .grid-item:hover .texto-galeria {
   display: none; }
@@ -147,18 +151,20 @@ h3 {
   align-self: start; }
 
 /*----pagina de contacto---*/
-.titulo {
-  margin: 50px 50px 30px 50px;
-  font-size: medium;
-  margin: 50px 50px 30px 50px; }
+#titulo {
+  margin: 30px 10px 0px 20px;
+  font-size: 30px; }
+
+#subtitulo {
+  margin: 0px 0px 20px 50px;
+  font-size: 24px; }
 
 .footer {
   display: flex;
   margin-top: auto;
   justify-content: space-between;
   margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 20px; }
+  margin-right: 50px; }
   .footer .redes {
     display: flex;
     max-width: 100%;
@@ -176,21 +182,17 @@ h3 {
     color: rgba(243, 174, 26, 0.705);
     transition: all 1s ease; }
 
-#titulo {
-  font-family: monospace;
-  margin: 10px 0px 0px 10px;
-  font-weight: bold;
-  font-size: large;
+#contacto {
+  margin-left: 30px;
+  margin-top: 50px;
+  font-size: 28px;
   line-height: 0; }
 
-.contacto {
-  margin-top: 3%;
-  margin-right: 20px;
-  max-width: 100%;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  font-size: medium; }
+#contacto-subtitulo {
+  margin-left: 50px;
+  margin-top: 30px;
+  font-size: 24px;
+  line-height: 0; }
 
 .titulo-formulario h1 {
   text-align: center;
@@ -215,67 +217,81 @@ input[type="submit"] {
   padding: 14px; }
 
 @media screen and (max-width: 767px) {
-  .imagen-principal {
-    width: 100vh;
-    height: 300px;
-    object-fit: cover; }
+  #titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: large; }
+  #subtitulo {
+    display: flex;
+    justify-content: center;
+    font-size: small;
+    margin: 0 0 10px 0; }
   .imagen-principal {
     display: none; }
   .imagen-principal-mobile {
     display: flex;
-    width: 100vh;
+    width: 400px;
     height: 300px;
     object-fit: cover;
     margin-top: 50px; }
-  .footer {
-    display: flex;
-    text-align: right;
-    align-self: flex-start;
-    font-size: xx-small; } }
-
-@media screen and (max-width: 767px) {
   .grid-container {
     grid-template-columns: 1fr; }
-  .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: top;
-    justify-self: flex-start;
-    color: black; }
-  .menu li {
-    margin: 1px; }
-  .menu li a:hover {
-    background-color: rgba(243, 174, 26, 0.705);
-    padding: 1px;
-    transition: all .3s; }
-  .titulo {
-    margin: 5px 5px 5px 5px;
-    font-size: x-small; }
-  .menu-dropdown {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    visibility: collapse;
-    z-index: 1000;
-    margin-left: 70px; }
   .footer {
     display: flex;
-    text-align: right;
-    align-self: flex-start;
-    font-size: xx-small; }
-  .redes {
+    font-size: small;
+    justify-items: center; }
+    .footer p {
+      justify-self: center; }
+    .footer .redes {
+      max-width: 100%;
+      max-height: 100%; }
+    .footer .redes a,
+    .footer i {
+      font-size: 15px;
+      color: black; }
+  .nosotros-container {
     display: flex;
-    max-width: 100%;
-    max-height: 100%;
-    justify-content: end; }
-  .redes {
-    justify-content: end; }
-  .redes a,
-  i {
-    display: inline-block;
-    font-size: 5px;
-    color: black; } }
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .grid-container {
-    grid-template-columns: repeat(3, 1fr); } }
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center; }
+  .nosotros-imagen {
+    display: flex;
+    align-self: center;
+    width: 500px;
+    height: auto; }
+  .container-imagen-nosotros:hover .nosotros-imagen {
+    transform: none;
+    transition: none; }
+  .texto-nosotros {
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .pagina-lugares {
+    display: grid;
+    max-width: 95%;
+    max-height: 90%; }
+  .grid-container-lugares {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .imagen-lugares {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; }
+  .titulo-lugares {
+    text-align: center;
+    margin-top: 10px;
+    font-size: large; }
+  .texto-lugares {
+    text-align: justify;
+    justify-content: start;
+    align-self: start; }
+  .body-contacto {
+    display: flex;
+    flex-direction: column; }
+    .body-contacto h1,
+    .body-contacto p {
+      font-size: large; }
+    .body-contacto .ibody {
+      width: 400px; } }

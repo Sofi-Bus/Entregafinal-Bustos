@@ -12,11 +12,6 @@
     }
 }
 
-
-
-
-
-
 .imagen-principal-mobile {
     display: none;
 }
@@ -77,12 +72,20 @@
 
 }
 
-.texto-galeria>p,
-h2,
-h3 {
-    margin-top: 20px;
+.texto-galeria {
 
+    p,
+    h2,
+    h3 {
+        font-size: 20px;
+        font-family: $fontmonospace;
+        
+    }
 
+    i {
+        margin-top: 30px;
+
+    }
 }
 
 .grid-item:hover .texto-galeria {
@@ -121,8 +124,6 @@ h3 {
     flex-direction: column;
     margin-left: 300px;
     margin-right: 300px;
-
-
 
 }
 
@@ -196,7 +197,6 @@ h3 {
 
 
 }
-
 
 
 /*----pagina de contacto---*/
