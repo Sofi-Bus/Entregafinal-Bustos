@@ -261,7 +261,7 @@ input[type="submit"] {
     align-items: center; }
   .nosotros-imagen {
     align-self: center;
-    width: 200px;
+    width: 400px;
     height: auto; }
   .container-imagen-nosotros:hover .nosotros-imagen {
     transform: none;
@@ -269,7 +269,7 @@ input[type="submit"] {
   .texto-nosotros {
     padding: 10px;
     margin-top: 10px 30px 10px 30px;
-    font-size: 10px; }
+    font-size: 13px; }
   /*------Lugares----*/
   .pagina-lugares {
     display: grid;
