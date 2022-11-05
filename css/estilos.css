@@ -2,24 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
-
-ol,
-ul {
-  list-style: none; }
-
-a,
-a:active {
-  text-decoration: none !important;
-  color: black !important; }
+  *::selection {
+    background-color: rgba(243, 174, 26, 0.705);
+    color: black; }
 
 body {
   background: whitesmoke;
   font-family: monospace;
   min-height: 100vh; }
-
-* ::selection {
-  background-color: rgba(243, 174, 26, 0.705);
-  color: black; }
 
 .principal {
   display: flex;
@@ -154,6 +144,20 @@ body {
   align-self: start; }
 
 /*----pagina de contacto---*/
+.navbar ol,
+.navbar ul {
+  list-style: none; }
+  .navbar ol a,
+  .navbar ol a:active,
+  .navbar ul a,
+  .navbar ul a:active {
+    text-decoration: none !important;
+    color: black !important;
+    border: 3px solid transparent; }
+
+.navbar li a:hover {
+  background-color: rgba(243, 174, 26, 0.705); }
+
 #titulo {
   margin: 30px 10px 0px 20px;
   font-size: 30px; }

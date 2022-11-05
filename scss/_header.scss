@@ -1,7 +1,31 @@
+.navbar {
+
+    ol,
+    ul {
+        list-style: none;
+
+        a,
+        a:active {
+            text-decoration: none !important;
+            color: black !important;
+            border: 3px solid transparent;
+        }
+
+    }
+
+    li a:hover {
+        background-color: rgba(243, 174, 26, 0.705);
+        
+    }
+
+
+}
+
+
+
 #titulo {
     margin: 30px 10px 0px 20px;
     font-size: 30px
-   
 }
 
 #subtitulo {
