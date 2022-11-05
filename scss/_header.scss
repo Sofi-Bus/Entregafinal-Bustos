@@ -9,23 +9,26 @@
             text-decoration: none !important;
             color: black !important;
             border: 3px solid transparent;
+
+            &:hover {
+                background-color: rgba(243, 174, 26, 0.705);
+            }
         }
-
     }
-
-    li a:hover {
-        background-color: rgba(243, 174, 26, 0.705);
-        
-    }
-
 
 }
 
-
-
 #titulo {
-    margin: 30px 10px 0px 20px;
-    font-size: 30px
+    h1 {
+        margin: 30px 10px 0px 20px;
+        font-size: 30px
+
+    }
+    h2{
+        margin: 0px 10px 1px 70px;
+        font-size: 25px
+        
+    }
 }
 
 #subtitulo {

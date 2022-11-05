@@ -1,26 +1,75 @@
-.principal {
+/*-----------INDEX----*/
+.pagina-principal {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 98vh;
+    flex-direction: column;
 
-    .imagen-principal {
-        margin-top: 30px;
-        max-width: 100%;
-        max-height: 100%;
+    .principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .imagen-principal {
+            margin-top: 30px;
+            max-width: 100%;
+            max-height: 100%;
+
+        }
 
 
     }
+
+
 }
 
-.imagen-principal-mobile {
-    display: none;
-}
+/*------Pagina Nosotros----*/
 
-.pagina-principal {
+.grid-container-nosotros {
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
+    min-height: 98vh;
+
 }
+
+.nosotros-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+    margin-right: 300px;
+
+}
+
+.container-imagen-nosotros {
+    overflow: hidden;
+}
+
+.nosotros-imagen {
+    width: auto;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 50px;
+
+}
+
+.container-imagen-nosotros:hover .nosotros-imagen {
+    transform: scale(1.2);
+    transition: 3s;
+
+
+}
+
+.titulo-nosotros {
+    text-align: center;
+
+}
+
+.texto-nosotros {
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*-----------LUGARES ----*/
 
 .lugares {
     min-height: 100vh;
@@ -79,7 +128,7 @@
     h3 {
         font-size: 20px;
         font-family: $fontmonospace;
-        
+
     }
 
     i {
@@ -110,58 +159,15 @@
 
 }
 
-/*------Pagina Nosotros----*/
-
-.grid-container-nosotros {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-
-}
-
-.nosotros-container {
-    display: flex;
-    flex-direction: column;
-    margin-left: 300px;
-    margin-right: 300px;
-
-}
-
-.container-imagen-nosotros {
-    overflow: hidden;
-}
-
-.nosotros-imagen {
-    width: auto;
-    height: 400px;
-    object-fit: cover;
-    margin-bottom: 50px;
-
-}
-
-.container-imagen-nosotros:hover .nosotros-imagen {
-    transform: scale(1.2);
-    transition: 3s;
-
-
-}
-
-.titulo-nosotros{
-    text-align: center;
-
-}
-.texto-nosotros {
-    text-align: justify;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
 
 /*pagina de Viajes----*/
 
+
 .pagina-lugares {
     display: grid;
-    max-width: 95%;
-    max-height: 90%;
+
+
+
 
 }
 
@@ -174,20 +180,11 @@
 
 }
 
-.imagen-lugares {
-    width: 100%;
-    height: 513.98px;
-    object-fit: cover;
-
-
-
-}
 
 
 .titulo-lugares {
     margin-bottom: 30px;
     font-size: x-large;
-
 
 
 }
@@ -199,8 +196,15 @@
     align-self: start;
 
 
-
 }
+
+.carousel-item {
+    img {
+        height: 500px;
+        object-fit: cover;
+    }
+}
+
 
 
 /*----pagina de contacto---*/

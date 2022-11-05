@@ -18,9 +18,9 @@
 <body>
   <div class="pagina-lugares">
     <header>
-      <div>
-        <h1 id="titulo">Cordobeses x Córdoba</h1>
-        <h1 id="subtitulo"> - Blog de Viaje -</h1>
+      <div id="titulo">
+        <h1>Cordobeses x Córdoba</h1>
+        <h2> - Blog de Viaje -</h2>
       </div>
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
@@ -47,7 +47,7 @@
                   <li><a class="dropdown-item" href="./cuesta-blanca.html">Cuesta Blanca</a></li>
                   <li><a class="dropdown-item" href="./los-chorrilos.html">Los Chorrillos</a></li>
                   <li><a class="dropdown-item" href="#">Los Gigantes</a></li>
-                  <li><a class="dropdown-item" href="./los-gigantes.html">Ongamira</a></li>
+                  <li><a class="dropdown-item" href="./ongamira.html">Ongamira</a></li>
                   <li><a class="dropdown-item" href="./pueblo-escondido.html">Pueblo Escondido</a></li>
                   <li><a class="dropdown-item" href="./quebrada-condorito.html">Quebrada del Condorito</a></li>
                   <li><a class="dropdown-item" href="./san_marcos.html">San Marcos Sierras</a></li>
@@ -69,9 +69,30 @@
     </header>
 
     <main class="grid-container-lugares">
-
-      <img class="imagen-lugares" src="../../../images/los_gigantes/gigantes_carpa.jpeg" alt="Foto de noche carpa en la montaña ">
-
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../../../images/los_gigantes/gigantes_noche_estrellas.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../../../images/los_gigantes/gigantes_paisaje_dia.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../../../images/los_gigantes/gigantes_rio_yuspe.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../../../images/los_gigantes/WhatsApp Image 2022-09-23 at 1.30.28 PM (12).jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
       <div class="texto-lugares">
         <div class="titulo-lugares">
           <h3>Los Gigantes</h3>

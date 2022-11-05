@@ -11,23 +11,54 @@ body {
   font-family: monospace;
   min-height: 100vh; }
 
-.principal {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .principal .imagen-principal {
-    margin-top: 30px;
-    max-width: 100%;
-    max-height: 100%; }
-
-.imagen-principal-mobile {
-  display: none; }
-
+/*-----------INDEX----*/
 .pagina-principal {
   display: flex;
-  min-height: 100vh;
+  min-height: 98vh;
   flex-direction: column; }
+  .pagina-principal .principal {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .pagina-principal .principal .imagen-principal {
+      margin-top: 30px;
+      max-width: 100%;
+      max-height: 100%; }
 
+/*------Pagina Nosotros----*/
+.grid-container-nosotros {
+  display: flex;
+  flex-direction: column;
+  min-height: 98vh; }
+
+.nosotros-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 300px;
+  margin-right: 300px; }
+
+.container-imagen-nosotros {
+  overflow: hidden; }
+
+.nosotros-imagen {
+  width: auto;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 50px; }
+
+.container-imagen-nosotros:hover .nosotros-imagen {
+  transform: scale(1.2);
+  transition: 3s; }
+
+.titulo-nosotros {
+  text-align: center; }
+
+.texto-nosotros {
+  text-align: justify;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+/*-----------LUGARES ----*/
 .lugares {
   min-height: 100vh;
   display: flex;
@@ -84,55 +115,15 @@ body {
   padding: 0;
   margin: 20px auto 0 auto; }
 
-/*------Pagina Nosotros----*/
-.grid-container-nosotros {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; }
-
-.nosotros-container {
-  display: flex;
-  flex-direction: column;
-  margin-left: 300px;
-  margin-right: 300px; }
-
-.container-imagen-nosotros {
-  overflow: hidden; }
-
-.nosotros-imagen {
-  width: auto;
-  height: 400px;
-  object-fit: cover;
-  margin-bottom: 50px; }
-
-.container-imagen-nosotros:hover .nosotros-imagen {
-  transform: scale(1.2);
-  transition: 3s; }
-
-.titulo-nosotros {
-  text-align: center; }
-
-.texto-nosotros {
-  text-align: justify;
-  margin-top: 10px;
-  margin-bottom: 10px; }
-
 /*pagina de Viajes----*/
 .pagina-lugares {
-  display: grid;
-  max-width: 95%;
-  max-height: 90%; }
+  display: grid; }
 
 .grid-container-lugares {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-column-gap: 50px;
   padding: 50px; }
-
-.imagen-lugares {
-  width: 100%;
-  height: 513.98px;
-  object-fit: cover; }
 
 .titulo-lugares {
   margin-bottom: 30px;
@@ -142,6 +133,10 @@ body {
   text-align: justify;
   justify-content: start;
   align-self: start; }
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover; }
 
 /*----pagina de contacto---*/
 .navbar ol,
@@ -154,13 +149,19 @@ body {
     text-decoration: none !important;
     color: black !important;
     border: 3px solid transparent; }
+    .navbar ol a:hover,
+    .navbar ol a:active:hover,
+    .navbar ul a:hover,
+    .navbar ul a:active:hover {
+      background-color: rgba(243, 174, 26, 0.705); }
 
-.navbar li a:hover {
-  background-color: rgba(243, 174, 26, 0.705); }
-
-#titulo {
+#titulo h1 {
   margin: 30px 10px 0px 20px;
   font-size: 30px; }
+
+#titulo h2 {
+  margin: 0px 10px 1px 70px;
+  font-size: 25px; }
 
 #subtitulo {
   margin: 0px 0px 20px 50px;
@@ -223,39 +224,46 @@ input[type="submit"] {
 .fcontacto {
   padding: 14px; }
 
+@media screen and (min-width: 767px) {
+  .imagen-mobile {
+    display: none; } }
+
 @media screen and (max-width: 767px) {
-  #titulo {
+  #titulo h1 {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 20px;
+    margin-left: 30px;
     font-size: large; }
+  #titulo h2 {
+    display: flex;
+    font-size: medium; }
   #subtitulo {
     display: flex;
     justify-content: center;
     font-size: small;
     margin: 0 0 10px 0; }
-  .imagen-principal {
-    display: none; }
-  .imagen-principal-mobile {
+  .imagen-mobile {
     display: flex;
     width: 400px;
     height: 300px;
     object-fit: cover;
     margin-top: 50px; }
+  .imagen-principal {
+    display: none; }
   .grid-container {
     grid-template-columns: 1fr; }
   .footer {
     display: flex;
-    font-size: small;
-    justify-items: center; }
+    font-size: x-small; }
     .footer p {
-      justify-self: center; }
+      text-align: start; }
     .footer .redes {
       max-width: 100%;
       max-height: 100%; }
     .footer .redes a,
     .footer i {
-      font-size: 15px;
+      font-size: 13px;
       color: black; }
   .nosotros-container {
     display: flex;

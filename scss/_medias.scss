@@ -1,12 +1,27 @@
+
+@media screen and (min-width:767px) {
+    .imagen-mobile {
+        display: none;
+    }
+}
+
+
 @media screen and (max-width:767px) {
-    
+
     #titulo {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-        font-size: large;
+        h1 {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 20px;
+            margin-left: 30px;
+            font-size: large;
+        }
 
+        h2 {
+            display: flex;
+            font-size: medium;
 
+        }
     }
 
     #subtitulo {
@@ -17,17 +32,19 @@
 
     }
 
-    .imagen-principal {
-        display: none;
-    }
-
-    .imagen-principal-mobile {
+    .imagen-mobile {
         display: flex;
         width: 400px;
         height: 300px;
         object-fit: cover;
         margin-top: 50px;
     }
+
+    .imagen-principal {
+        display: none;
+    }
+
+
 
     .grid-container {
         grid-template-columns: 1fr;
@@ -36,12 +53,10 @@
 
     .footer {
         display: flex;
-        font-size: small;
-        justify-items: center;
-
+        font-size: x-small;
 
         p {
-            justify-self: center;
+            text-align: start;
 
         }
 
@@ -52,9 +67,8 @@
 
         .redes a,
         i {
-            font-size: 15px;
+            font-size: 13px;
             color: black;
-
         }
     }
 
@@ -84,7 +98,8 @@
         margin-top: 10px 30px 10px 30px;
         font-size: 13px;
     }
-/*------Lugares----*/
+
+    /*------Lugares----*/
     .pagina-lugares {
         display: grid;
         max-width: 95%;
@@ -129,20 +144,20 @@
     }
 
     .body-contacto {
-    
+
         display: flex;
         flex-direction: column;
-        
+
         h1,
         p {
             font-size: large;
 
-            
+
         }
 
-.ibody {
-    width: 400px;
-}
+        .ibody {
+            width: 400px;
+        }
 
 
 
