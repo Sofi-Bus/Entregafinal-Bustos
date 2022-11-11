@@ -184,9 +184,63 @@
 
     }
 
+    .texto-lugares{
+
+         .titulo-lugares {
+        display: none;
+    }
+
+        p {
+            margin-top: 30px;
+        }
+
+    }
+   
+
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+
     .titulo-lugares {
         display: none;
     }
+    .titulo-mobile {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .subtitulo-mobile {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .pagina-lugares {
+        display: grid;
+        max-width: 100%;
+        max-height: 100%;
+
+    }
+
+    .grid-container-lugares {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 5px;
+
+    }
+    .texto-lugares{
+
+        p{
+            margin: 30px 20px 0px 20px;
+
+        }
+    }
+    
+    .footer{
+        margin-top: 20px;
+    }
+
 
 }
 

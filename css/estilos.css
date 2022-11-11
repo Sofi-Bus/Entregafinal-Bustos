@@ -8,7 +8,7 @@
 
 body {
   background: whitesmoke;
-  font-family: monospace;
+  font-family: monospace !important;
   min-height: 100vh; }
 
 /*-----------INDEX----*/
@@ -21,7 +21,7 @@ body {
     justify-content: center;
     align-items: center; }
     .pagina-principal .principal .imagen-principal {
-      margin-top: 30px;
+      margin-top: 50px;
       max-width: 100%;
       max-height: 100%; }
 
@@ -103,6 +103,15 @@ body {
           font-size: xx-large; }
 
 /*pagina de Viajes----*/
+.texto-lugares .titulo-lugares {
+  font-family: monospace;
+  text-align: center; }
+  .texto-lugares .titulo-lugares h3 {
+    font-weight: bold;
+    text-transform: uppercase; }
+  .texto-lugares .titulo-lugares h4 {
+    font-size: 20px; }
+
 .pagina-lugares {
   display: grid; }
 
@@ -113,10 +122,16 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-column-gap: 50px;
-  padding: 50px; }
+  padding: 50px;
+  text-align: justify; }
+  .grid-container-lugares p {
+    margin-top: 10px; }
+
+.carousel-inner {
+  margin-top: 10px; }
 
 .carousel-item img {
-  height: 500px;
+  height: 600px;
   object-fit: cover; }
 
 /*----pagina de contacto---*/
@@ -137,8 +152,9 @@ body {
       background-color: rgba(243, 174, 26, 0.705); }
 
 .titulo h1 {
-  margin: 30px 10px 0px 20px;
-  font-size: 24px; }
+  font-weight: bold;
+  margin: 20px 10px 0px 20px;
+  font-size: 30px; }
 
 .titulo h2 {
   margin: 0px 10px 1px 70px;
@@ -337,8 +353,34 @@ input[type="submit"] {
     grid-template-columns: 1fr;
     gap: 10px;
     padding: 5px; }
+  .texto-lugares .titulo-lugares {
+    display: none; }
+  .texto-lugares p {
+    margin-top: 30px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .titulo-lugares {
-    display: none; } }
+    display: none; }
+  .titulo-mobile {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; }
+  .subtitulo-mobile {
+    display: flex;
+    justify-content: center; }
+  .pagina-lugares {
+    display: grid;
+    max-width: 100%;
+    max-height: 100%; }
+  .grid-container-lugares {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 5px; }
+  .texto-lugares p {
+    margin: 30px 20px 0px 20px; }
+  .footer {
+    margin-top: 20px; } }
 
 /*------- pagina de contacto---*/
 .body-contacto {

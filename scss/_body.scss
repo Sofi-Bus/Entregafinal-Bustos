@@ -10,7 +10,7 @@
         align-items: center;
 
         .imagen-principal {
-            margin-top: 30px;
+            margin-top: 50px;
             max-width: 100%;
             max-height: 100%;
 
@@ -156,8 +156,22 @@
 
 
 /*pagina de Viajes----*/
+.texto-lugares {
 
+    .titulo-lugares {
 
+        font-family: $fontmonospace;
+        text-align: center;
+        h3 {
+        font-weight: bold;
+        text-transform: uppercase;
+        }
+        h4 {
+        font-size: 20px;
+        }
+    
+    }
+    }
 .pagina-lugares {
     display: grid;
 
@@ -173,13 +187,20 @@
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 50px;
     padding: 50px;
+    text-align: justify;
 
+    p {
+        margin-top: 10px;
+    }
+}
 
+.carousel-inner{
+    margin-top: 10px;
 }
 
 .carousel-item {
     img {
-        height: 500px;
+        height: 600px;
         object-fit: cover;
     }
 }
