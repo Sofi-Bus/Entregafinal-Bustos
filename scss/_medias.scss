@@ -37,7 +37,7 @@
         width: 400px;
         height: 300px;
         object-fit: cover;
-        margin-top: 50px;
+        margin-top: 70px;
     }
 
     .imagen-principal {
@@ -66,6 +66,19 @@
             color: black;
         }
     }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    .imagen-principal {
+        display: none;
+    }
+    .imagen-mobile {
+        display: flex;
+        object-fit: cover;
+        margin-top: 70px;
+    }
+
+
 }
 
 @media screen and (max-width:767px) {
