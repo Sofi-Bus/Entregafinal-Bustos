@@ -15,9 +15,9 @@
   <meta name="keywords" content="Blog, Viajes, Cordoba, paseo, trekking, paisajes">
 </head>
 
-<body class="body-contacto">
+<body>
   <header>
-  
+
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container-fluid">
         <div class="titulo">
@@ -43,6 +43,11 @@
                 Viajes
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                <li><a class="dropdown-item" href="./viajes/viajes.html">Todos</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
                 <li><a class="dropdown-item" href="./viajes/lugares/bocas-del-rio.html">Bocas del Rio</a></li>
                 <li><a class="dropdown-item" href="./viajes/lugares/cuesta-blanca.html">Cuesta Blanca</a></li>
                 <li><a class="dropdown-item" href="./viajes/lugares/los-chorrilos.html">Los Chorrillos</a></li>
@@ -52,10 +57,7 @@
                 <li><a class="dropdown-item" href="./viajes/lugares/quebrada-condorito.html">Quebrada del Condorito</a>
                 </li>
                 <li><a class="dropdown-item" href="./viajes/lugares/san_marcos.html">San Marcos Sierras</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="./viajes/viajes.html">Todos</a></li>
+
               </ul>
             </li>
             <li class="nav-item">
@@ -68,33 +70,36 @@
     </nav>
     <div class="linea"></div>
   </header>
-  <div class="ibody">
-    <div class="titulo-formulario">
-      <h1>Contacta con Nosotros</h1>
+  <main>
+    <div class="titulo-contacto">
+      <h3>Contacta con Nosotros</h3>
     </div>
-    <div class="fcontacto">
-      <form method="post" name="fcontacto" id="fcontacto" action="./">
-        <div class="row">
-          <div class="col-md-6">
-            <label>Tu Nombre:</label>
-            <input type="text" name="name" id="name" class="form-control">
-          </div>
-          <div class="col-md-6">
-            <label>Tu Email:</label>
-            <input type="text" name="email" id="email" class="form-control">
-          </div>
-        </div>
-        <label>Asunto:</label>
+    <div class="ibody">
 
-        <input type="text" name="asunto" id="asunto" class="form-control">
-        <label>Tu Mensaje</label>
-        <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form-control">   </textarea>
-        <input type="submit" class="btn btn bg-light" value="Enviar">
-      </form>
+      <div class="fcontacto">
+        <form method="post" name="fcontacto" id="fcontacto" action="./">
+          <div class="row">
+            <div class="col-md-6">
+              <label>Tu Nombre:</label>
+              <input type="text" name="name" id="name" class="form-control">
+            </div>
+            <div class="col-md-6">
+              <label>Tu Email:</label>
+              <input type="text" name="email" id="email" class="form-control">
+            </div>
+          </div>
+          <label>Asunto:</label>
+
+          <input type="text" name="asunto" id="asunto" class="form-control">
+          <label>Tu Mensaje</label>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form-control">   </textarea>
+          <input type="submit" class="btn btn-light col-md-12" value="Enviar">
+        </form>
+      </div>
+
     </div>
-
-  </div>
-  <footer id="footer">
+  </main>
+  <footer class="footer">
     <p> Hecho con <i class="fas fa-heart cora"></i> por Sofi Bustos</p>
     <div class="redes">
       <a href="https://www.instagram.com/" target=_blank><i class="fab fa-instagram">

@@ -1,86 +1,43 @@
-#contacto {
-    margin-left: 30px;
-    margin-top: 50px;
-    font-size: 28px;
-    line-height: 0;
-}
-
-#contacto-subtitulo {
-    margin-left: 50px;
-    margin-top: 30px;
-    font-size: 24px;
-    line-height: 0;
-
-}
-
-
-.titulo-formulario h1 {
-    text-align: center;
-    font-size: xx-large;
+.titulo-contacto{
+    font-size: 2rem; 
+    margin-top: 20px;
+    text-align: center
+    
 }
 
 .ibody {
 
-    background-image: url(../images/los_gigantes/gigantes_noche_estrellas.jpeg);
+    background-color: white;
     background-size: cover;
     margin: 40px auto;
     margin-bottom: 60px;
     width: 500px;
     font-family: monospace;
-    border: 1px solid #bfd8eb;
+    border: 1px solid black;
     border-radius: 8px;
-    color: whitesmoke;
+    color: black;
 
 }
 
-label,
+label{
+
+    margin-top: 8px;
+}
+
 input[type="submit"] {
     margin-top: 8px;
+    
+    &:hover{
+        
+        background-color: $Amarillo !important;
+    }
 
 }
+
+
 
 .fcontacto {
     padding: 14px;
 
 }
 
-#footer {
-    display: flex;
-    margin-top: auto;
-    justify-content: start;
-    margin-left: 3px;
-    margin-right: 3px;
-    font-size: small;
-    p{
-        font-size: 15px;
-    }
-    .redes {
-        display: flex;
-        max-width: 100%;
-        max-height: 100%;
-        justify-content: end;
-        
-
-
-    }
-
-    .redes a,
-    i {
-        display: inline-block;
-        font-size: 20px;
-        margin: 0 10px 0 10px;
-        color: black;
-
-    }
-
-    .redes a,
-    i:hover {
-        transform: scale(1.5);
-        color: $Amarillo;
-        transition: all 1s ease;
-
-    }
-
-
-
-}

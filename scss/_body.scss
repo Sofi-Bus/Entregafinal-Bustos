@@ -22,54 +22,6 @@
 
 }
 
-/*------Pagina Nosotros----*/
-
-.grid-container-nosotros {
-    display: flex;
-    flex-direction: column;
-    min-height: 98vh;
-
-    .nosotros-container {
-        display: flex;
-        flex-direction: column;
-        margin-left: 300px;
-        margin-right: 300px;
-
-        .container-imagen-nosotros {
-            overflow: hidden;
-
-            .nosotros-imagen {
-                width: auto;
-                height: 400px;
-                object-fit: cover;
-                margin-bottom: 50px;
-
-                &:hover {
-                    transform: scale(1.2);
-                    transition: 3s;
-                }
-            }
-
-        }
-
-        .titulo-nosotros {
-            text-align: center;
-            font-family: $fontmonospace;
-            margin-top: 10px;
-
-        }
-
-        .texto-nosotros {
-            text-align: justify;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-    }
-
-
-}
-
-
 /*-----------LUGARES ----*/
 
 .lugares {
@@ -155,6 +107,54 @@
 }
 
 
+/*------Pagina Nosotros----*/
+
+.grid-container-nosotros {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .nosotros-container {
+        flex-direction: column;
+        margin-left: 300px;
+        margin-right: 300px;
+
+
+        .container-imagen-nosotros {
+            overflow: hidden;
+
+            .nosotros-imagen {
+                width: auto;
+                height: 400px;
+                object-fit: cover;
+                margin-bottom: 50px;
+
+                &:hover {
+                    transform: scale(1.2);
+                    transition: 3s;
+                }
+            }
+        }
+    }
+
+    .titulo-nosotros {
+        text-align: center;
+        margin-top: 10px;
+        font-size: $fontmonospace;
+        margin-bottom: 10px;
+    }
+
+    .texto-nosotros {
+        text-align: justify;
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+    }
+
+}
+
+
+
 /*pagina de Viajes----*/
 .texto-lugares {
 
@@ -162,21 +162,30 @@
 
         font-family: $fontmonospace;
         text-align: center;
+
         h3 {
-        font-weight: bold;
-        text-transform: uppercase;
+            font-weight: bold;
+            text-transform: uppercase;
         }
+
         h4 {
-        font-size: 20px;
+            font-size: 20px;
         }
-    
+
+        &::first-letter {
+            text-transform: uppercase;
+        }
+
     }
-    }
+}
+
 .pagina-lugares {
     display: grid;
 
 }
-.titulo-mobile, .subtitulo-mobile {
+
+.titulo-mobile,
+.subtitulo-mobile {
     display: none;
 
 }
@@ -194,7 +203,7 @@
     }
 }
 
-.carousel-inner{
+.carousel-inner {
     margin-top: 10px;
 }
 
@@ -207,4 +216,5 @@
 
 
 
-/*----pagina de contacto---*/
+
+

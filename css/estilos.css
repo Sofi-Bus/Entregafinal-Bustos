@@ -25,35 +25,6 @@ body {
       max-width: 100%;
       max-height: 100%; }
 
-/*------Pagina Nosotros----*/
-.grid-container-nosotros {
-  display: flex;
-  flex-direction: column;
-  min-height: 98vh; }
-  .grid-container-nosotros .nosotros-container {
-    display: flex;
-    flex-direction: column;
-    margin-left: 300px;
-    margin-right: 300px; }
-    .grid-container-nosotros .nosotros-container .container-imagen-nosotros {
-      overflow: hidden; }
-      .grid-container-nosotros .nosotros-container .container-imagen-nosotros .nosotros-imagen {
-        width: auto;
-        height: 400px;
-        object-fit: cover;
-        margin-bottom: 50px; }
-        .grid-container-nosotros .nosotros-container .container-imagen-nosotros .nosotros-imagen:hover {
-          transform: scale(1.2);
-          transition: 3s; }
-    .grid-container-nosotros .nosotros-container .titulo-nosotros {
-      text-align: center;
-      font-family: monospace;
-      margin-top: 10px; }
-    .grid-container-nosotros .nosotros-container .texto-nosotros {
-      text-align: justify;
-      margin-top: 10px;
-      margin-bottom: 10px; }
-
 /*-----------LUGARES ----*/
 .lugares {
   min-height: 100vh;
@@ -102,6 +73,35 @@ body {
           color: whitesmoke;
           font-size: xx-large; }
 
+/*------Pagina Nosotros----*/
+.grid-container-nosotros {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+  .grid-container-nosotros .nosotros-container {
+    flex-direction: column;
+    margin-left: 300px;
+    margin-right: 300px; }
+    .grid-container-nosotros .nosotros-container .container-imagen-nosotros {
+      overflow: hidden; }
+      .grid-container-nosotros .nosotros-container .container-imagen-nosotros .nosotros-imagen {
+        width: auto;
+        height: 400px;
+        object-fit: cover;
+        margin-bottom: 50px; }
+        .grid-container-nosotros .nosotros-container .container-imagen-nosotros .nosotros-imagen:hover {
+          transform: scale(1.2);
+          transition: 3s; }
+  .grid-container-nosotros .titulo-nosotros {
+    text-align: center;
+    margin-top: 10px;
+    font-size: monospace;
+    margin-bottom: 10px; }
+  .grid-container-nosotros .texto-nosotros {
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+
 /*pagina de Viajes----*/
 .texto-lugares .titulo-lugares {
   font-family: monospace;
@@ -111,11 +111,14 @@ body {
     text-transform: uppercase; }
   .texto-lugares .titulo-lugares h4 {
     font-size: 20px; }
+  .texto-lugares .titulo-lugares::first-letter {
+    text-transform: uppercase; }
 
 .pagina-lugares {
   display: grid; }
 
-.titulo-mobile, .subtitulo-mobile {
+.titulo-mobile,
+.subtitulo-mobile {
   display: none; }
 
 .grid-container-lugares {
@@ -134,7 +137,6 @@ body {
   height: 600px;
   object-fit: cover; }
 
-/*----pagina de contacto---*/
 .navbar ol,
 .navbar ul {
   list-style: none; }
@@ -194,81 +196,48 @@ body {
     color: rgba(243, 174, 26, 0.705);
     transition: all 1s ease; }
 
-#contacto {
-  margin-left: 30px;
-  margin-top: 50px;
-  font-size: 28px;
-  line-height: 0; }
-
-#contacto-subtitulo {
-  margin-left: 50px;
-  margin-top: 30px;
-  font-size: 24px;
-  line-height: 0; }
-
-.titulo-formulario h1 {
-  text-align: center;
-  font-size: xx-large; }
+.titulo-contacto {
+  font-size: 2rem;
+  margin-top: 20px;
+  text-align: center; }
 
 .ibody {
-  background-image: url(../images/los_gigantes/gigantes_noche_estrellas.jpeg);
+  background-color: white;
   background-size: cover;
   margin: 40px auto;
   margin-bottom: 60px;
   width: 500px;
   font-family: monospace;
-  border: 1px solid #bfd8eb;
+  border: 1px solid black;
   border-radius: 8px;
-  color: whitesmoke; }
+  color: black; }
 
-label,
+label {
+  margin-top: 8px; }
+
 input[type="submit"] {
   margin-top: 8px; }
+  input[type="submit"]:hover {
+    background-color: rgba(243, 174, 26, 0.705) !important; }
 
 .fcontacto {
   padding: 14px; }
-
-#footer {
-  display: flex;
-  margin-top: auto;
-  justify-content: start;
-  margin-left: 3px;
-  margin-right: 3px;
-  font-size: small; }
-  #footer p {
-    font-size: 15px; }
-  #footer .redes {
-    display: flex;
-    max-width: 100%;
-    max-height: 100%;
-    justify-content: end; }
-  #footer .redes a,
-  #footer i {
-    display: inline-block;
-    font-size: 20px;
-    margin: 0 10px 0 10px;
-    color: black; }
-  #footer .redes a,
-  #footer i:hover {
-    transform: scale(1.5);
-    color: rgba(243, 174, 26, 0.705);
-    transition: all 1s ease; }
 
 @media screen and (min-width: 767px) {
   .imagen-mobile {
     display: none; } }
 
-@media screen and (max-width: 767px) {
-  #titulo h1 {
+@media screen and (max-width: 720px) {
+  .titulo h1 {
     display: flex;
     justify-content: flex-start;
     margin-top: 20px;
     margin-left: 30px;
-    font-size: large; }
-  #titulo h2 {
+    font-size: x-large; }
+  .titulo h2 {
     display: flex;
-    font-size: medium; }
-  #subtitulo {
+    font-size: large; }
+  .subtitulo {
     display: flex;
     justify-content: center;
     font-size: small;
@@ -283,26 +252,19 @@ input[type="submit"] {
     display: none; }
   .footer {
     display: flex;
-    font-size: x-small; }
+    font-size: x-small;
+    margin-left: 10px; }
     .footer p {
-      text-align: start; }
+      text-align: left; }
     .footer .redes {
       max-width: 100%;
       max-height: 100%; }
     .footer .redes a,
     .footer i {
       font-size: 13px;
-      color: black; } }
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .imagen-principal {
-    display: none; }
-  .imagen-mobile {
-    display: flex;
-    object-fit: cover;
-    margin-top: 70px; } }
-
-@media screen and (max-width: 767px) {
+      color: black;
+      justify-items: end;
+      margin-right: 0px; }
   .grid-container-nosotros .nosotros-container {
     display: flex;
     flex-direction: column;
@@ -316,27 +278,21 @@ input[type="submit"] {
   .grid-container-nosotros .container-imagen-nosotros:hover .nosotros-imagen {
     transform: none;
     transition: none; }
+  .grid-container-nosotros .titulo-nosotros {
+    font-size: 18px; }
+    .grid-container-nosotros .titulo-nosotros::first-letter {
+      text-transform: uppercase; }
   .grid-container-nosotros .texto-nosotros {
     padding: 10px;
     margin-top: 10px 30px 10px 30px;
-    font-size: 13px; } }
-
-/*------Lugares----*/
-@media screen and (max-width: 767px) {
+    font-size: 13px; }
   .lugares .titulo-viajes {
-    text-align: center;
-    font-family: monospace;
-    margin-top: 10px; }
+    font-size: 18px; }
+    .lugares .titulo-viajes::first-letter {
+      text-transform: uppercase; }
   .lugares .grid-container {
     display: grid;
-    grid-template-columns: 1fr; } }
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .grid-container {
-    grid-template-columns: repeat(3, 1fr); } }
-
-/*------- pagina de viajes---*/
-@media screen and (max-width: 767px) {
+    grid-template-columns: 1fr; }
   .titulo-mobile {
     display: flex;
     justify-content: center;
@@ -356,15 +312,34 @@ input[type="submit"] {
   .texto-lugares .titulo-lugares {
     display: none; }
   .texto-lugares p {
-    margin-top: 30px; } }
+    margin: 30px 30px 10px 30px; }
+  .body-contacto {
+    display: flex;
+    flex-direction: column; }
+    .body-contacto h1,
+    .body-contacto p {
+      font-size: medium !important; }
+    .body-contacto .ibody {
+      width: 200px; } }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 721px) and (max-width: 1023px) {
+  .imagen-principal {
+    display: none; }
+  .imagen-mobile {
+    display: flex;
+    object-fit: cover;
+    margin-top: 70px; }
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr) !important; }
   .titulo-lugares {
     display: none; }
   .titulo-mobile {
     display: flex;
     justify-content: center;
-    margin-top: 30px; }
+    margin-top: 30px;
+    font-size: 18px; }
+    .titulo-mobile::first-letter {
+      text-transform: uppercase; }
   .subtitulo-mobile {
     display: flex;
     justify-content: center; }
@@ -378,16 +353,27 @@ input[type="submit"] {
     gap: 10px;
     padding: 5px; }
   .texto-lugares p {
-    margin: 30px 20px 0px 20px; }
+    margin: 30px 30px 0px 30px; }
   .footer {
-    margin-top: 20px; } }
-
-/*------- pagina de contacto---*/
-.body-contacto {
-  display: flex;
-  flex-direction: column; }
-  .body-contacto h1,
-  .body-contacto p {
-    font-size: large; }
-  .body-contacto .ibody {
-    width: 400px; }
+    margin-top: 20px; }
+  .grid-container-nosotros .nosotros-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 10px;
+    align-items: center; }
+  .grid-container-nosotros .nosotros-imagen {
+    align-self: center;
+    width: 400px;
+    height: auto; }
+  .grid-container-nosotros .container-imagen-nosotros:hover .nosotros-imagen {
+    transform: none;
+    transition: none; }
+  .grid-container-nosotros .titulo-nosotros {
+    font-size: 18px; }
+    .grid-container-nosotros .titulo-nosotros::first-letter {
+      text-transform: uppercase; }
+  .grid-container-nosotros .texto-nosotros {
+    padding: 10px;
+    margin-top: 10px 30px 10px 30px;
+    font-size: 13px; } }
