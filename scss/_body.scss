@@ -1,8 +1,7 @@
 /*-----------INDEX----*/
 .pagina-principal {
-    display: flex;
-    min-height: 98vh;
-    flex-direction: column;
+    @extend %flex;
+
 
     .principal {
         display: flex;
@@ -18,22 +17,15 @@
 
 
     }
-
-
 }
 
 /*-----------LUGARES ----*/
 
 .lugares {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    @extend %flex;
 
     .titulo-viajes {
-        text-align: center;
-        font-family: $fontmonospace;
-        margin-top: 10px;
-
+        @extend %titulos;
     }
 
     .grid-container {
@@ -110,9 +102,7 @@
 /*------Pagina Nosotros----*/
 
 .grid-container-nosotros {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    @extend %flex;
 
     .nosotros-container {
         flex-direction: column;
@@ -138,9 +128,7 @@
     }
 
     .titulo-nosotros {
-        text-align: center;
-        margin-top: 10px;
-        font-size: $fontmonospace;
+        @extend %titulos;
         margin-bottom: 10px;
     }
 
@@ -199,7 +187,7 @@
     text-align: justify;
 
     p {
-        margin-top: 10px;
+        margin-top: 20px;
     }
 }
 
@@ -213,8 +201,3 @@
         object-fit: cover;
     }
 }
-
-
-
-
-
