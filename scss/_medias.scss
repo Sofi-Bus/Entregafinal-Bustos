@@ -66,18 +66,17 @@
 
         .redes a,
         i {
-            font-size: 13px;
+            font-size: 20px;
             color: black;
             justify-items: end;
-            margin-right: 0px;
+            margin-right: 5px;
 
         }
     }
 
     .grid-container-nosotros {
         .nosotros-container {
-            display: flex;
-            flex-direction: column;
+            @include flexcolumn;
             margin-right: 10px;
             margin-left: 10px;
             align-items: center;
@@ -104,6 +103,7 @@
         }
 
         .texto-nosotros {
+            text-align: center;
             padding: 10px;
             margin-top: 10px 30px 10px 30px;
             font-size: 13px;
@@ -134,14 +134,12 @@
     }
 
     .titulo-mobile {
-        display: flex;
-        justify-content: center;
+        @include titulomobile; 
         margin-top: 30px;
     }
 
     .subtitulo-mobile {
-        display: flex;
-        justify-content: center;
+        @include titulomobile;
 
     }
 
@@ -180,7 +178,7 @@
 
         h1,
         p {
-            font-size: medium !important    ;
+            font-size: medium !important;
 
 
         }
@@ -218,10 +216,9 @@
     }
 
     .titulo-mobile {
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
+        @include titulomobile;
         font-size: 18px;
+        margin-top: 30px;
 
         &::first-letter {
             text-transform: uppercase;
@@ -229,8 +226,7 @@
     }
 
     .subtitulo-mobile {
-        display: flex;
-        justify-content: center;
+        @include titulomobile;
 
     }
 
@@ -263,17 +259,17 @@
 
     .grid-container-nosotros {
         .nosotros-container {
-            display: flex;
-            flex-direction: column;
+            @include flexcolumn;
             margin-right: 10px;
             margin-left: 10px;
             align-items: center;
         }
 
         .nosotros-imagen {
-            align-self: center;
-            width: 400px;
+            justify-self: center;
+            width: 500px;
             height: auto;
+            margin-left: 10px;
         }
 
         .container-imagen-nosotros:hover .nosotros-imagen {

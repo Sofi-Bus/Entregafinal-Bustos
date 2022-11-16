@@ -11,3 +11,17 @@
     flex-direction: column;
 
 }
+
+@mixin titulomobile {
+
+    display: flex;
+    justify-content: center;
+       
+    
+
+}
+@mixin flexcolumn {
+    display: flex;
+    flex-direction: column;
+    
+}
